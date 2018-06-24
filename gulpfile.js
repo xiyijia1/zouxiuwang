@@ -56,7 +56,7 @@ gulp.task("watch",function(){
 	gulp.watch("html/**",["html"]);
 	gulp.watch("sass/**",["sass"]);
 	gulp.watch("img/**",["image"]);
-	gulp.watch("js/**",["js"]);
+	gulp.watch("js/**",["scripts"]);
 //	gulp.watch(["json/**","xml/**","!xml/a.xml"],["copy-data"])
 })
 

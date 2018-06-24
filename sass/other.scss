@@ -1,0 +1,81 @@
+$youxiaokuang:1200px;
+$yibanhei:#333;
+
+@mixin jichu{
+    width: $youxiaokuang;
+    margin: 0 auto;
+    
+}
+
+
+#share{
+    @include jichu;
+    height: 86px;
+    box-sizing: border-box;
+    padding-left: 20px;
+    a{
+        display: block;
+        width: 250px;
+        height: 86px;
+        margin-right: 60px;
+        background: url(../img/share.jpg) no-repeat;
+        float: left;
+    }
+}
+#share .shareBtn{
+    
+}
+
+#share .newBtn{
+    background-position-x:-250px ;
+}
+
+#share .newGift{
+    background-position-x:-745px ;
+    
+}
+
+#share .invitate{
+    margin: 0;
+    background-position-x:-985px ;
+    
+}
+
+
+//最新
+#zuixin{
+    @include jichu;
+    background: yellow;
+}
+.common{
+    height: 80px;
+    line-height: 80px;
+    font-size: 30px;
+    text-align: center;
+    font-weight: normal;
+    color: #030303;
+    letter-spacing: 4px;
+}
+.common span{
+    position: relative;
+}
+.common span:before{
+    content: "";
+    display: block;
+    width: 70px;
+    height: 1px;
+    background: #b4b4b4;
+    position: absolute;
+    left: -86px;
+    top: 20px;
+}
+.common span:after{
+    content: "";
+    display: block;
+    width: 70px;
+    height: 1px;
+    background: #b4b4b4;
+    position: absolute;
+    right: -86px;
+    top: 20px;
+}
