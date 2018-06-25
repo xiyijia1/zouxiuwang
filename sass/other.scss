@@ -45,7 +45,7 @@ $yibanhei:#333;
 //最新
 #zuixin{
     @include jichu;
-    background: yellow;
+    margin-bottom: 20px;
 }
 .common{
     height: 80px;
@@ -76,6 +76,429 @@ $yibanhei:#333;
     height: 1px;
     background: #b4b4b4;
     position: absolute;
-    right: -86px;
+    right: -80px;
     top: 20px;
+}
+
+.huo{
+    overflow: hidden;
+}
+.huo li{
+    float: left;
+    position: relative;
+    width: 600px;
+    height: 300px;
+    overflow: hidden;
+}
+.huo a{
+    
+}
+.huo p{
+    position: absolute;
+    width: 600px;
+    height: 80px;
+    left: 0;
+    top: 50%;
+    margin-top: -40px;
+    
+}
+.huo p img{
+    margin: 0 auto;
+}
+.picScral{
+    transition: all 1s;
+}
+.picScral:hover{
+    transform: scale(1.1);
+}
+//jianhuo
+#jianhuo{
+    @include jichu;
+}
+.jianhuoUl{
+    width: 100%;
+    height: 580px;
+    display: flex;
+    align-content: space-between;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 44px;
+    li{
+        flex: 1;
+        a{
+            
+            img{
+                opacity: 1;
+                transition: all 1s; 
+                &:hover{
+                    opacity: 0.8;
+                }
+                
+            }
+        }
+    }
+}
+#jianhuoUl3{
+    margin-bottom: 24px;
+}
+
+//rejian
+#rejian{
+     @include jichu;
+}
+#rejianUl li{
+    margin-bottom: 40px;
+}
+
+
+//topicmore
+#topicmore{
+    @include jichu;
+    margin-bottom: 40px;
+    a{
+        display: block;
+    }
+}
+#topicmore img{
+    margin: 0 auto;
+}
+
+//豪车入口
+#auto{
+   @include jichu; 
+   margin-bottom: 28px;
+   img{
+       transition: all 1s;
+       &:hover{
+           opacity: .8;
+       } 
+   }
+}
+
+
+//好货入口
+#haohuo{
+    @include jichu;
+}
+#haohuoUl{
+    display: flex;
+    width: 1200px;
+    height: 2022px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    
+    li{
+        width: 287px;
+        box-sizing: border-box;
+        height: 490px;
+        a{
+           display: block;
+           width: 100%;
+           height: 100%; 
+           position: relative;
+           p{
+               position: absolute;
+               width: 285px;
+               height:488px;
+               top:0;
+               left:0;
+               border: 1px solid #efefef;
+               &:hover{
+                   border: 1px solid #d5d5d5;
+               }
+               
+           } 
+        }
+    }
+}
+
+
+//haohuo_more
+#haohuo_more
+{  @include jichu;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    h6{
+        margin: 0 auto;
+        width: 158px;
+        height: 35px;
+        box-sizing: border-box;
+        border: 1px solid #d3d3d3;
+        line-height: 33px;
+        font-size: 14px;
+        text-align: center;
+        color: #252525;
+        border-radius: 16px;
+        letter-spacing: 2px;
+    }
+}
+
+
+/*-------------------------------login---------------------------*/
+#login_header{
+    @include jichu;
+    height: 60px;
+    h1{
+        float: left;
+        width: 194px;
+        height: 30px;
+        position: relative;
+        margin: 15px auto;
+        a{
+            position: absolute;
+            z-index: 1;
+            display: block;
+            width: 194px;
+            height: 30px;
+            top: 0;
+            left: 0;
+        }
+    }
+}
+
+//login_page
+#login_page{
+    border-top:1px solid #e5e5e5;
+    background:#f7f2ec;
+    margin-bottom: 20px;
+    #login_page_bgColor{
+        position: relative;
+        width: 100%;
+        height: 700px;
+        width: 1200px;
+        margin: 0 auto;
+        #login_page_bg{
+           background: url(../img/login_bg.jpg) no-repeat center ; 
+           width: 100%;
+           height: 100%;
+        }
+    }
+}
+#login_box{
+    background: white;
+    width: 420px;
+    height: 560px;
+    position: absolute;
+    z-index: 10;
+    border: 1px solid #d8d8d8;
+    box-shadow: 0 0 20px #c8c8c8;
+    top: 70px;
+    right: 0px;
+}
+.login_tab{
+    height: 52px;
+    background: #f7f7f9;
+    li{
+        width: 50%;
+        float: left;
+        a{
+            display: block;
+            width: 100%;
+            line-height: 50px;
+            height: 50px;
+            font-size: 17px;
+            color: #afafaf;
+            text-align: center;
+            &:hover,&.hover{
+                color: #464646;
+                border-bottom: 2px solid #464646;
+            }
+        }
+    }
+}
+#login_duanxin,#login_duanxinL{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 60px;
+}
+#phone,#phoneL{
+    box-sizing: border-box;
+    width: 300px;
+    font-size: 12px;
+    color: #afafaf;
+    text-indent: 10px;
+    height: 36px;
+    border: 1px solid #d8d8d8;
+}
+.phone_kuang,.yanzheng_kuang{
+    box-sizing: border-box;
+    font-size: 12px;
+    color: #afafaf;
+    position: relative;
+    > span{
+        display: none;
+        position: absolute;
+        background: white;
+        top: -6px;
+        left: 20px;
+        padding-right: 5px;
+        text-indent: 5px;
+    }
+}
+
+#tishi,#tishiY,#tishiL{
+    display: none;
+    line-height: 12px;
+    color: #d3041f;
+    font-size: 12px;
+    position: relative;
+    height: 12px;
+    b{
+        width: 12px;
+        height: 12px;
+        background: url(../img/login_sprite.png) no-repeat -200px 0;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    
+}
+#shoujihaoyanzheng,#shoujihaoyanzhengY,#shoujihaoyanzhengL{
+    color: #d2041f;
+    line-height: 12px;
+    font-size: 12px;
+    padding: 0 40px 0 20px;
+}
+
+#yanzhnegma,#yanzhnegmaL{
+    width: 187px;
+    height: 36px;
+    box-sizing: border-box;
+    font-size: 12px;
+    color: #afafaf;
+    text-indent: 10px;
+    height: 36px;
+    border: 1px solid #d8d8d8;
+}
+#yanzhnegmaL{
+    width: 300px;
+}
+#getyanzhengma{
+    width: 103px;
+    height: 36px;
+    box-sizing: border-box;
+    font-size: 12px;
+    color: #afafaf;
+    text-indent: 10px;
+    height: 36px;
+    border: 1px solid #d8d8d8;
+    background: #f7f7f9;
+    float: right;
+    cursor: pointer;
+    color: #333;
+}
+#findMima{
+    margin: 25px 0;
+    float: right;
+    font-size: 12px;
+    color: #333;
+    width: 300px;
+    text-align: right;
+}
+#dengluBtn{
+    height: 40px;
+    width: 300px;
+    border: none;
+    border-radius: 17px;
+    background: #d2041f;
+    font-size: 14px;
+    color: white;
+    cursor: pointer;
+}
+
+.zi{
+    width: 300px;
+    height: 35px;
+    border-bottom: 1px solid #e7e7e7;
+    position: relative;
+    span{
+        position: absolute;
+        background: white;
+        left: 95px;
+        padding: 0 12px;
+        bottom: -6px;
+        font-size: 12px;
+        line-height: 12px;
+    }
+}
+
+.hezuo{
+    width: 270px;
+    height: 30px;
+    margin: 0 auto;
+    margin-top: 25px;
+    li{
+        float: left;
+        width: 30px;
+        height: 30px;
+        margin: 0 30px 0 0 ;
+        overflow: hidden;
+        a{
+            
+            display: block;
+            width: 30px;
+            height: 30px;
+            background: url(../img/login_sprite.png) no-repeat;
+            
+        }
+        &:nth-child(2) a{
+            background-position: -30px 0;
+        }
+        &:nth-child(3) a{
+            background-position: -60px 0;
+        }
+        &:nth-child(4) a{
+            background-position: -90px 0;
+        }
+        &:nth-child(5) a{
+            background-position: -120px 0;
+        }
+    }
+}
+.yonghuxieyi{
+    line-height: 12px;
+    text-align: center;
+    font-size: 12px;
+    margin-top: 24px;
+}
+
+
+.saoma{
+    width: 85px;
+    height: 25px;
+    position: absolute;
+    right: 55px;
+    bottom: 12px;
+    background: url(../img/login_sprite.png) no-repeat 0 -360px;
+}
+.erweima{
+    background: url(../img/login_sprite.png) no-repeat 0 -400px;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.zhaomima{
+    margin: 25px 0;
+    font-size: 12px;
+    color: #333;
+    width: 300px;
+    text-align: right;
+    float: right;
+    a{
+        color: #333;
+        &:hover{
+            text-decoration: blink;
+        }
+    }
+    span{
+        margin: 0 4px;
+    }
+}
+#zhuce:hover{
+    cursor: help;
+    
 }

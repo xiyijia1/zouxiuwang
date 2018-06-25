@@ -39,7 +39,7 @@ gulp.task("scripts",function(){
 	.pipe(sourcemaps.init())
 	.pipe(babel({"presets":["es2015"]}))
 	.pipe(uglify())
-	.pipe(sourcemaps.write())
+	.pipe(sourcemaps.write('.', {includeContent: false, sourceRoot: '../src'}))
 	.pipe(gulp.dest("dist/js"))
 	.pipe(connect.reload());
 })
@@ -51,13 +51,18 @@ gulp.task("sever",function(){
 		})
 })
 
+gulp.task("data",function(){
+	gulp.src("jsonData/**")
+	.pipe(gulp.dest("dist/jsonData"))
+	.pipe(connect.reload())
+})
 gulp.task("watch",function(){
 	gulp.watch("index.html",["copy-index"]);
 	gulp.watch("html/**",["html"]);
 	gulp.watch("sass/**",["sass"]);
 	gulp.watch("img/**",["image"]);
 	gulp.watch("js/**",["scripts"]);
-//	gulp.watch(["json/**","xml/**","!xml/a.xml"],["copy-data"])
+	gulp.watch("jsonData/**",["data"]);
 })
 
 gulp.task("default",["sever","watch"])

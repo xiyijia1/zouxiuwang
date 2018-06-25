@@ -6,7 +6,6 @@
 		<link rel="stylesheet" type="text/css" href="css/base.css"/>
 		<link rel="stylesheet" type="text/css" href="css/ft-carousel.css"/>
 		<link rel="stylesheet" type="text/css" href="css/other.css"/>
-		
 		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 	<body>
@@ -14,7 +13,7 @@
 			<ul id="header_con">
 				<ul id="header_left" class="fl">
 					<li class="fl" id="loginBtn">
-						<a href="html/login.html">登录/注册</a>
+						<a href="html/zhuce.html">登录/注册</a>
 					</li>
 					<li class="fl" id="shoppingBtn">
 
@@ -44,8 +43,8 @@
 					<input type="text" placeholder="请搜索Kenzo试试" id="shuru" class="fl"/>
 					<input type="button" id="searchBtn" class="fl"/>
 					<div id="search_con">
-						<!--<ul>
-							<li>
+						<ul id="search_conUl">
+							<!--<li>
 								<span>风衣 </span>
 								<span class="hanerji">
 									在
@@ -54,8 +53,8 @@
 									</span>
 									类内搜索
 								</span>
-							</li>
-						</ul>-->
+							</li>-->
+						</ul>
 					</div>
 				</form>
 			</div>
@@ -318,11 +317,189 @@
 		
 		
 		<div id="zuixin">
-			<h3 class="zuixin common">
+			<h3 class="zuixintit common">
 				<span>最新</span>
 			</h3>
+			<ul id="zuixinUl" class="huo">
+					<!--<li>
+						<a href="">
+							<img src="http://images.xiustatic.com/cms/noregular/2018/03/01/home/zuixin_01.jpg" class="picScral"/>
+						</a>
+						<p><img src="img/zuixin_01.png"/></p>
+					</li>-->
+				</ul>
 		</div>
 		
+		
+		<div id="jianhuo">
+			<h3 class="jianhuotit common">
+				<span>尖货推荐</span>
+			</h3>
+			<ul id="jianhuoUl1" class="jianhuoUl">
+				<!--<li>
+					<a href="">
+						<img src="http://images.xiustatic.com/cms/noregular/2018/05/17/home/s13.jpg" alt="" />
+						
+					</a>
+				</li>-->
+			</ul>
+			
+			<ul id="jianhuoUl2" class="jianhuoUl"></ul>
+			<ul id="jianhuoUl3" class="jianhuoUl"></ul>
+		</div>
+		
+		<div id="rejian">
+			<h3 class="rejiantit common">
+				<span>热荐专题</span>
+			</h3>
+			<ul id="rejianUl" class="huo">
+					<!--<li>
+						<a href="">
+							<img src="http://images.xiustatic.com/cms/noregular/2018/03/01/home/zuixin_01.jpg" class="picScral"/>
+						</a>
+						<p><img src="img/zuixin_01.png"/></p>
+					</li>-->
+				</ul>
+		</div>
+		
+		
+		<div id="topicmore">
+			<a href="">
+				<img src="img/topic_m.jpg" alt="" />
+			</a>
+		</div>
+		
+		<div id="auto">
+			<a href="">
+				<img src="img/auto1.jpg"/>
+			</a>
+		</div>
+		
+		<div id="haohuo">
+			<h3 class="haohuotit common">
+				<span>热荐专题</span>
+			</h3>
+			<ul id="haohuoUl">
+				<!--<li>
+					<a href="">
+						<img src="img/1.jpg" alt="" />
+						<p></p>
+					</a>	
+				</li>-->
+			</ul>
+		</div>
+		
+		<div id="haohuo_more">
+			<a href="">
+				<h6>发现更多好货</h6>
+			</a>
+		</div>
+		
+		<footer>
+			<div id="footer_first" class="fl">
+				<a href="" title="在线客服" id="kefu"></a>
+				<p id="dianhua"></p>
+				<a href="" title="我要吐槽" id="tucao"></a>
+			</div>
+			<dl id="footer_sec" class="fl">
+				<dd><a href="">招贤纳士</a></dd>
+				<dd><a href="">CEO邮箱</a></dd>
+				<dd><a href="">售后服务</a></dd>
+				<dd><a href="">常见问题</a></dd>
+				<dd class="guanshui">
+					<a href="">关税说明</a>
+					<div>
+						<p>
+							商品为海外商品，关税由海外卖家承担，如顾客接海关或物流通知缴纳税费，请先行按照国家规定支付，再凭纳税凭证联系走秀客服找海外卖家报销。
+						</p>
+					</div>
+				</dd>
+				<dd><a href="">物流配送</a></dd>
+			</dl>
+			<div id="footer_thi" class="fl">
+				<dt>
+					<span>关注我们</span>
+				</dt>
+				<dd>
+					<p>
+						<a href="" class="weixin">
+							<i class="xiaoweixin">
+								<img src="img/weixinQr.jpg"/>
+							</i>
+						</a>
+						<a href=""></a>
+						<a href=""></a>
+						<a href=""></a>
+					</p>
+				</dd>
+				<dd>
+					<div class="emain_box">
+						<form id="email_ding">
+							<input type="text" name="" id="email_address" placeholder="订阅最新时尚资讯邮件..." />
+							<input type="hidden" name="" id="" value="" />
+							<input type="hidden" name="" id="" value="" />
+						</form>
+						<input type="button" name="" id="ding" value="" />
+						<div class="stageDing"></div>
+					</div>
+				</dd>
+			</div>
+			
+			<dl id="footer_four" class="fr">
+				<dt>我们的APP</dt>
+				<dd>
+					<a href=""></a>
+				</dd>
+			</dl>
+		</footer>
+		<div id="footer_link">
+			<ul>
+				<li><a href="">关于走秀</a><span>|</span></li>
+				<li><a href="">About us</a><span>|</span></li>
+				<li><a href="">媒体报道</a><span>|</span></li>
+				<li><a href="">品牌招商</a><span>|</span></li>
+				<li><a href="">加入走秀</a><span>|</span></li>
+				<li><a href="">网站地图</a><span>|</span></li>
+				<li><a href="">联系我们</a><span>|</span></li>
+				<li><a href="">品牌大全</a><span>|</span></li>
+				<li><a href="">邮件订阅</a><span>|</span></li>
+				<li><a href="">WAP站点</a></li>
+			</ul>
+		</div>
+		<div id="footer_btn">
+			<a href="" title="海外直发"></a>
+			<a href="" title="品质保障"></a>
+			<a href="" title="售后保障"></a>
+		</div>
+		<p id="footer_copy">
+			Copyright © 2008-2018
+			<a href="">Xiu.com</a>
+			深圳走秀网络科技有限公司 版权所有 . 
+			<a href="">粤ICP备07502993号</a>
+			<a href="">
+				<img src="img/wab.png" alt="" />
+                                       粤公网安备 44030402000804号
+			</a>
+		</p>
+		<div id="footer_footer">
+			<a href="">
+				<img src="img/c_01.jpg" alt="" />
+			</a>
+			<a href="">
+				<img src="img/c_11.jpg" alt="" />
+			</a>
+			<a href="">
+				<img src="img/c_04.jpg" alt="" />
+			</a>
+			<a href="">
+				<img src="img/c_08.jpg" alt="" />
+			</a>
+			<a href="">
+				<img src="img/c_09.jpg" alt="" />
+			</a>
+			
+		</div>
+		<script src="js/cookie.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/ft-carousel.min.js" type="text/javascript" charset="utf-8"></script>
 	</body>
