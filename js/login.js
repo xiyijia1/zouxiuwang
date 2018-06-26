@@ -26,8 +26,6 @@ $(function(){
 		
 		$(this).css("border","1px solide #7fbfe7").attr("placeholder","短信验证码");
 		$(".yanzheng_kuang>span").hide();
-		
-		
 	})
 	
 	
@@ -66,7 +64,9 @@ $(function(){
 						$("#tishiL").show();
 						$("#tishiL #shoujihaoyanzhengL").text("用户名密码不符");
 					}else{
+						setCookie("username",phoneStr,7);
 						location.href="../index.html";
+						
 					}
 					
 				})

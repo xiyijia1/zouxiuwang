@@ -502,3 +502,392 @@ $yibanhei:#333;
     cursor: help;
     
 }
+
+
+/*--------------------------------------list-------------------------*/
+#list_tu{
+    margin: 10px auto 0;
+    width: 1000px;
+}
+
+#list_weizhi{
+    padding-left: 10px;
+    height: 29px;
+    line-height: 25px;
+    position: relative;
+    width: 990px;
+    margin: 10px auto 0 auto;
+    z-index: 2;
+    clear: both;
+    font-size: 12px;
+    a{
+        
+        position: relative;
+        border: 1px solid #FFFFFF;
+        border-bottom: 0;
+        text-decoration: none;
+        padding: 0 16px 0 5px;
+        display: inline-block;
+        max-width: 9.25em;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        vertical-align: top;
+        overflow: hidden;
+    }
+}
+#list_weizhi:after{
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+.hd{
+    float: left;
+    border: 1px solid #fff;
+}
+#weizhi{
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+.weizhili{
+    margin: 0;
+    padding: 0;
+    float: left;
+    position: relative;
+    
+}
+#list_weizhi .weizhili:hover>a{
+    border: 1px solid #eb7410;
+    border-bottom: 0;
+    background: white;
+    z-index: 3;
+}
+#list_weizhi #weizhi .first:hover a{
+    border: 1px solid #FFFFFF;
+    border-bottom: 0;
+}
+.weizhili:hover .dropdown{
+    display: block;
+}
+.weizhili>i{
+        background: url(../img/jts.jpg) no-repeat;
+        display: inline-block;
+        width: 6px;
+        height: 13px;
+        vertical-align: top;
+        overflow: hidden;
+        margin: 7px 4px 0 4px;
+    }
+.weizhili>a{
+    color: #00579d;
+    em{
+        display: inline-block;
+        background: url(../img/xia.jpg) no-repeat;
+        width: 7px;
+        height: 4px;
+        vertical-align: middle;
+        margin-left: 3px;
+        position: absolute;
+        top: 12px;
+        right: 6px;
+        line-height: 4px;
+    }
+}
+#list_weizhi .first>a{
+    padding: 0 5px;
+}
+
+.totalcount{
+    position: absolute;
+    top: 0;
+    right: 0;
+    span{
+        padding-right: 3px;
+        padding-left: 3px;
+        color: red;
+    }
+}
+.icarr{
+    display: block;
+    width: 6px;
+    height: 7px;
+    background: url(../img/list2.png) no-repeat 0 0;
+    position: absolute;
+    top: 50%;
+    margin-top: -5px;
+    left: 0;
+    line-height: 0;
+    font-size: 0;
+    font-family: Arial;
+}
+.dropdown{
+    margin: 0;
+    display: none;
+    position: absolute;
+    z-index: 2;
+    top: 25px;
+    width: 350px;
+    left: 0;
+    border: 1px solid #eb7410;
+    padding: 10px 10px 10px 5px;
+    background: white;line-height: 20px;
+}
+.dropdown li{
+    margin: 0;
+    padding: 0 3px 0 5px;
+    position: relative;
+    display: inline-block;
+    float: left;
+    color: #6e6e6e;
+}
+.dropdown li a{
+    display: block;
+    text-align: center;
+    color: #6e6e6e;
+}
+
+
+//list_con
+#list_con{
+    width: 1000px;
+    margin: 10px auto;
+    font-size: 12px;
+    color: #404040;
+    line-height: 1.5em;
+}
+#list_juti{
+    width: 1000px;
+}
+#list_juti_up{
+    width: 1000px;
+    margin-bottom: 10px;
+    
+}
+.listUl{
+    padding-top: 10px;
+    overflow: hidden;
+}
+.everyOne{
+    float: left;
+    width: 234px;
+    height: 394px;
+    display: inline;
+    cursor: default;
+    position: relative;
+    vertical-align: bottom;
+    overflow: hidden;
+    border: 2px solid white;
+    margin-right: 16px;
+    margin-bottom: 15px;
+}
+.everyOne:hover{
+    border: 2px solid #e7e7e7;
+}
+.everyOne:hover .count{
+    bottom: -25px;
+}
+//.everyOne:hover .sold_size{
+//  top: -113px;
+//}
+.everyOne ol{
+    width: 234px;
+    margin: 0 auto;
+    position: relative;
+}
+.prc{
+    width: 234px;
+    height: 312px;
+    overflow: hidden;
+    position: relative;
+}
+.prcA{
+    display: block;
+    width: 234px;
+    height: 312px;
+    position: relative;
+    img{
+        width: 234px;
+        height: 312px;
+    }
+}
+.count{
+    height: 25px;
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    font-size: 12px;
+    line-height: 25px;
+    transition: all 1s;
+}
+.count p{
+    border: 1px solid #d8d8d8;
+    height: 23px;
+    color: #e22222;
+    background: white;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.count p span{
+    padding-left: 14px;
+}
+.sold_size{
+    width: 234px;
+    opacity: 0.9;
+    position: relative;
+    top: 0;
+    background: rgba(251,249,253,.9);
+    border-bottom: 1px solid #e8e8e8;
+    transition: all 1s; 
+}
+.sold_size_tip{
+    color: #666;
+    height: 14px;
+    padding: 10px 0 0 10px;
+}
+.sold_sizeUl{
+    padding: 10px 0 0 10px;
+    height: 100%;
+    overflow: hidden;
+}
+.size{
+    cursor: pointer;
+    border: 1px solid #a7a7a7;
+    background: white;
+    color: #333333;
+    float: left;
+    height: 22px;
+    line-height: 22px;
+    margin: 0 9px 10px 0;
+    text-align: center;
+    padding: 0 10px;
+    display: inline-block;
+    
+}
+.box{
+    position: relative;
+    background: #d9d9d9;
+    color: #a4a4a4;
+}
+.line_through{
+    text-decoration: line-through;
+}
+.tit{
+    height: 36px;
+    overflow: hidden;
+    line-height: 18px;
+    width: 224px;
+    margin: 10px 0 0 10px;
+    padding: 0;
+}
+.tit a{
+    overflow: hidden;
+    display: block;
+    color: #666666;
+    &:hover{
+        color: #f26521;
+    }
+}
+.price{
+    overflow: hidden;
+    margin: 8px 0 3px 10px;
+}
+.showPrice{
+    vertical-align: middle;
+    height: 20px;
+    line-height: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 13px;
+    color: #d80c18;
+    background: url(../img/list2.png) no-repeat 2px -355px;
+}
+.prePrice{
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+    display: inline-block;
+    color: #a2a2a2;
+    margin-left: 5px;
+    padding-left: 10px;
+    background: url(../img/list2.png) no-repeat 0 -376px;
+    vertical-align: middle;
+    text-decoration: line-through;
+}
+//backTop
+
+#backTop{
+    position: fixed;
+    right: 30px;
+    bottom: 180px;
+    z-index: 1000;
+}
+#backTop a{
+    display: block;
+    line-height: 26px;
+    color: #444;
+    text-align: center;
+//  border: 1px solid #e7e7e7;
+}
+.maun{
+    width: 67px;
+    background: white;
+}
+.closed{
+    color: #f00;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    width: 67px;
+    height: 30px;
+    line-height: 30px;
+    background: white;
+    border: 1px solid #ddd;
+    &:hover{
+        background: #df3c34;
+        color: white;
+    }
+}
+.service{
+    background: url(../img/r_menu_bg.jpg) no-repeat;
+    width: 69px;
+    height: 56px;
+}
+.buy{
+    background: url(../img/r_menu_bg.jpg) no-repeat left -56px;
+    width: 69px;
+    height: 56px;
+    
+}
+#num{
+    background: url(../img/circle.png) no-repeat ;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 12px;
+    color: #FFFFFF;
+    display: inline-block;
+    margin-top: 4px;
+    margin-left: 28px;
+}
+.tucao{
+    background: url(../img/r_menu_bg.jpg) no-repeat left -112px;
+    width: 69px;
+    height: 56px;
+    
+}
+.huidao{
+    background: url(../img/r_menu_bg.jpg) no-repeat left -171px;
+    width: 69px;
+    height: 56px;
+    
+}
+#backTop a:hover{
+    background-position-x: -69px;
+}

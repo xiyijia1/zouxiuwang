@@ -199,6 +199,8 @@ nav{
     background: $yibanhei;
     height: 42px;
     padding-top: 10px;
+    width: 100%;
+    z-index: 3;
     #nav_conn{
         @include jichu;
         display: flex;
@@ -231,6 +233,8 @@ nav{
 #sub_nav{
     background: #f7f7f7;
     height: 42px;
+    width: 100%;
+    z-index: 3;
     #sub_nav_con{
         @include jichu;
         display: flex;
