@@ -2,8 +2,548 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title></title>
+		<title>详情</title>
+		<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/other.css"/>
+		<script src="../js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 	<body>
+		<header>
+			<ul id="header_con">
+				<ul id="header_left" class="fl">
+					<li class="fl" id="loginBtn">
+						<a href="../html/zhuce.html">登录/注册</a>
+					</li>
+					<li class="fl" id="shoppingBtn">
+
+						<div id="my_bag">
+							<p>购物袋暂时没有商品</p>
+						</div>
+						<a href="html/login.html">购物袋<span>0</span>件</a>
+						
+					</li>
+					<li class="fl" id="myBtn">
+						<a href="html/login.html">
+							我的走秀
+						</a>
+						<div id="my_show">
+								<a href="">我的订单</a>
+								<a href="">自助退货</a>
+								<a href="">我的收藏</a>
+								<a href="">帮助中心</a>
+								<a href="">全部吐槽</a>
+							</div>
+					</li>
+				</ul>
+				<h1 id="logo">
+					<a href="../index.html"></a>
+				</h1>
+				<form id="search">
+					<input type="text" placeholder="请搜索Kenzo试试" id="shuru" class="fl"/>
+					<input type="button" id="searchBtn" class="fl"/>
+					<div id="search_con">
+						<ul id="search_conUl">
+							<!--<li>
+								<span>风衣 </span>
+								<span class="hanerji">
+									在
+									<span class="search_con_er">
+										风衣
+									</span>
+									类内搜索
+								</span>
+							</li>-->
+						</ul>
+					</div>
+				</form>
+			</div>
+		</header>
+		
+		<nav>
+			<div id="nav_conn">
+				<ul id="nav_con">
+					<li class="fl">
+						<a href="">首页</a>
+					</li>
+					<li class="fl">
+						<a href="">新品</a>
+					</li>
+					<li class="fl">
+						<a href="">男士</a>
+					</li>
+					<li class="fl">
+						<a href="">女士</a>
+					</li>
+					<li class="fl">
+						<a href="">品牌</a>
+					</li>
+					<li class="fl">
+						<a href="">专题</a>
+					</li>
+					<li class="fl" style="margin-right: 0;">
+						<a href="">手机走秀</a>
+					</li>
+				</ul>
+			</div>
+			
+		</nav>
+		
+		
+		<div id="sub_nav">
+			<div id="sub_nav_con">
+				<ul>
+					<li class="fl">
+						<a href="">包袋</a>
+						<div class="erji">
+							<div class="erji_con">
+								<div class="erji_left fl">
+									<!--<dl>
+										<dt>
+											女士包袋
+										</dt>
+										<dd>
+											<a href="">手提包</a> <span>|</span>
+											<a href="">水桶包</a> <span>|</span>
+											<a href="">链条包</a> <span>|</span>
+											<a href="">购物袋</a> <span>|</span>
+											<a href="">单肩/斜跨包</a> <span>|</span>
+											<a href="">手提包</a> <span>|</span>
+											<a href="">手提包</a> <span>|</span>
+											<a href="">手提包</a> <span>|</span>
+											<a href="">手提包</a> <span>|</span>
+											<a href="">手提包</a> <span>|</span>
+											
+										</dd>
+									</dl>-->
+								</div>
+								
+								<div class="erji_right fl">
+									<!--<dl>
+										<dt>
+											热门品牌
+										</dt>
+										<dd>
+											<a href="">afddaafd</a>
+											<a href="">afddaafd</a>
+											<a href="">afddaafd</a>
+											<a href="">afddaafd</a>
+										</dd>
+									</dl>-->
+								</div>
+							</div>
+							
+						</div>
+					</li>
+					<li class="fl">
+						<a href="">服装</a>
+						<div class="erji">
+							<div class="erji_con">
+								<div class="erji_left fl">
+									
+								</div>
+								
+								<div class="erji_right fl">
+									
+								</div>
+							</div>
+							
+						</div>
+					</li>
+					<li class="fl">
+						<a href="">鞋靴</a>
+						<div class="erji">
+							<div class="erji_con">
+								<div class="erji_left fl">
+									
+								</div>
+								
+								<div class="erji_right fl">
+									
+								</div>
+							</div>
+							
+						</div>
+					</li>
+					<li class="fl">
+						<a href="">腕表</a>
+						<div class="erji l43">
+							<div class="erji_con">
+								<div class="erji_left fl">
+									
+								</div>
+								
+								<div class="erji_right fl">
+									
+								</div>
+							</div>
+							
+						</div>
+					</li>
+					<li class="fl">
+						<a href="">配饰</a>
+						<div class="erji l114">
+							<div class="erji_con">
+								<div class="erji_left fl">
+									
+								</div>
+								
+								<div class="erji_right fl">
+									
+								</div>
+							</div>
+							
+						</div>
+					</li>
+					<li class="fl">
+						<a href="">妆品</a>
+						<div class="erji l185">
+							<div class="erji_con">
+								<div class="erji_left fl">
+									
+								</div>
+								
+								<div class="erji_right fl">
+									
+								</div>
+							</div>
+							
+						</div>
+					</li>
+					<li class="fl">
+						<a href="">生活</a>
+						<div class="erji l256">
+							<div class="erji_con">
+								<div class="erji_left fl">
+									
+								</div>
+								
+								<div class="erji_right fl">
+									
+								</div>
+							</div>
+							
+						</div>
+					</li>
+					<li class="fl">
+						<a href="">婴童</a>
+						<div class="erji l327">
+							<div class="erji_con">
+								<div class="erji_left fl">
+									
+								</div>
+								
+								<div class="erji_right fl">
+									
+								</div>
+							</div>
+							
+						</div>
+					</li>
+					<li class="fl" style="margin-right: 0;">
+						<a href="">豪车</a>
+						<div class="erji l398">
+							<div class="erji_con">
+								<div class="erji_left fl">
+									
+								</div>
+								
+								<div class="erji_right fl">
+									
+								</div>
+							</div>
+							
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="list_weizhi" style="border-bottom: 1px solid #e5e5e5;">
+			<label class="hd">您的位置 : </label>
+			<ul id="#weizhi">
+				<li class="first weizhili">
+					<a href="">走秀首页</a>
+					<i></i>
+				</li>
+				<li class="weizhili first">
+					<a href="">
+						女装
+					</a>
+					<i></i>
+				</li>
+				<li class="weizhili first">
+					<a href="">
+						裙装
+					</a>
+					<i></i>
+				</li>
+				<li class="weizhili first">
+					<a href="">
+						连衣裙
+					</a>
+					<i></i>
+				</li>
+				<li>
+					<p id="mingzi">裤子</p>
+				</li>
+			</ul>
+			<b class="icarr"></b>
+		</div>
+		<!-----------------------pro_con------------------------------>
+		
+		<div id="pro_con">
+			<div id="con_main">
+				<!--产品图片开始-->
+				<div class="p_map">
+					<div class="big_map">
+						<div id="imgPicDiv">
+							<img src="../img/xiangqing.jpg" id="imgPic"/>
+							<div id="showimg"></div>
+							<div id="bigPicDiv" style="background: white;">
+								<img src="../img/xiangqing.jpg" id="bigPic" alt="" />
+							</div>
+						</div>
+					</div>
+					<div class="sm_map">
+						<dl id="smallPic">
+							<!--<dd class="dc">
+								<a href="">
+									<img src="../img/xiangqing.jpg" alt="" />
+								</a>
+							</dd>-->
+						</dl>
+					</div>
+				</div>
+				<!--产品图片结束-->
+				
+				<!--产品价格开始-->
+				<div class="p_price">
+					<div id="goodsInfoBox">
+						<div id="p_title">
+							<h3 id="pt_name">
+								<!--连衣裙-->
+							</h3>
+							<span id="pt_down">
+								<font>品  牌 :</font>
+								<a href="" id="pinpaiName">
+									<!--衬衣-->
+								</a>
+								<a href="" id="common">已有3条品牌评论</a>
+								<i id="bianhao">
+									<!--商品编号:3-->
+								</i>
+							</span>
+						</div>
+						<div id="prd_price_div">
+							<div id="prd_price_div_con">
+								<div id="zouxiujia">
+									<span class="spw">走秀价:</span>
+									<span id="spwPrice">
+										<!--334-->
+									</span>
+								</div>
+								<div class="clearfix"></div>
+								<p id="fahuodi">
+									<span class="spw">发货地:</span>
+									<b>国内</b>
+									<b class="stime">预计2-5个工作日送达</b>
+								</p>
+							</div>
+						</div>
+						<div id="prd_attr_div">
+							<div id="modleDiv">
+								<div class="cm_hz" id="colorAres">
+									<div class="xsxm">颜&nbsp;&nbsp;&nbsp;&nbsp;色:</div>
+									<div class="cmxs">
+										<ul id="colorUl">
+											<li class="selected">
+												<a href="" id="c_0">浅黄/黄色</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="cm_hz" id="sizeAres">
+									<div class="xsxm">尺&nbsp;&nbsp;&nbsp;&nbsp;码:</div>
+									<div class="cmxs">
+										<ul id="sizeUl">
+											<li class="selected">
+												<a href="" id="c_0">XS</a>
+											</li>
+											<li>
+												<a href="" id="c_0">S</a>
+											</li>
+											<li>
+												<a href="" id="c_0">M</a>
+											</li>
+											<li>
+												<a href="" id="c_0">L</a>
+											</li>
+										</ul>
+										<a class="zhinan" href="">尺码指南</a>
+									</div>
+								</div>
+								<div class="cm_hz" id="j_amount">
+									<div class="xsxm">数&nbsp;&nbsp;&nbsp;&nbsp;量:</div>
+									<div class="cmxs">
+										<span class="jiajian" id="jian"></span>
+										<input type="text" name="inputCount" id="inputCount" value="1" />
+										<span class="jiajian" id="jia"></span>
+										&nbsp;&nbsp;件
+									</div>
+								</div>
+								<div id="installment">
+									<a href="" class="fqfh">
+										支持分期付款
+										<em>
+											<img src="../img/fqbiao.jpg" alt="" />
+											<b>订单总金额大于<font style="color: #ea7514;">500</font>元即可选择订单分期付款</b>
+											<br />
+											支付时选择"信用卡分期"-"银联在线支付",
+											<br />
+											即可分期付款.
+										</em>
+									</a>
+									<span class="wlb">
+										<a href="" class="tigongzhe ">
+											由Azzurro Antonia Studio提供
+										</a>
+									</span>
+									<span class="fwb">由走秀网提供售后服务</span>
+								</div>
+								<div id="buyBtnId">
+									<a href="" title="立即购买" id="buyNow"></a>
+									<a href="" title="放入购物袋" id="fangrugouwudai"></a>
+									<a href="" id="shoucang"></a>
+								</div>
+								<div class="call_buy">
+									电话订购  : <strong>400-888-499</strong>&nbsp;<span>(09:00-19:00)</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="share_box">
+						<dl>
+							<dt>
+								<img src="../img/xiangqing_erweima.jpg"/>
+							</dt>
+							<dd>
+								<p style="height: 30px;"></p>
+								扫一扫二维码
+								<br />
+								分享给朋友
+							</dd>
+						</dl>
+						<div class="ensuer">
+							<div id="shareBox">
+								<span>分享到 : </span>
+								<a href="" id="xinlang" title="分享到新浪"></a>
+								<a href="" id="tenxun" title="分享到腾讯微博"></a>
+								<a href="" id="renren" title="分享到人人网"></a>
+								<a href="" id="kaixin" title="分享到开心网"></a>
+								<a href="" id="douban" title="分享到豆瓣网"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!--------------------------backtop--------------------------------->
+		<div id="backTop">
+			<span class="closed">关闭</span>
+			<div class="maun">
+				<a href="" class="service"></a>
+				<a href="cart.html" class="buy">
+					<span id="num">0</span>
+				</a>
+				<a href="" class="tucao"></a>
+				<a href="" class="huidao"></a>
+			</div>
+			
+		</div>
+		<!----------------------------------footer-------------------------->
+		<footer>
+			<div id="footer_first" class="fl">
+				<a href="" title="在线客服" id="kefu"></a>
+				<p id="dianhua"></p>
+				<a href="" title="我要吐槽" id="tucao"></a>
+			</div>
+			<dl id="footer_sec" class="fl">
+				<dd><a href="">招贤纳士</a></dd>
+				<dd><a href="">CEO邮箱</a></dd>
+				<dd><a href="">售后服务</a></dd>
+				<dd><a href="">常见问题</a></dd>
+				<dd class="guanshui">
+					<a href="">关税说明</a>
+					<div>
+						<p>
+							商品为海外商品，关税由海外卖家承担，如顾客接海关或物流通知缴纳税费，请先行按照国家规定支付，再凭纳税凭证联系走秀客服找海外卖家报销。
+						</p>
+					</div>
+				</dd>
+				<dd><a href="">物流配送</a></dd>
+			</dl>
+			<div id="footer_thi" class="fl">
+				<dt>
+					<span>关注我们</span>
+				</dt>
+				<dd>
+					<p>
+						<a href="" class="weixin">
+							<i class="xiaoweixin">
+								<img src="../img/weixinQr.jpg"/>
+							</i>
+						</a>
+						<a href=""></a>
+						<a href=""></a>
+						<a href=""></a>
+					</p>
+				</dd>
+				<dd>
+					<div class="emain_box">
+						<form id="email_ding">
+							<input type="text" name="" id="email_address" placeholder="订阅最新时尚资讯邮件..." />
+							<input type="hidden" name="" id="" value="" />
+							<input type="hidden" name="" id="" value="" />
+						</form>
+						<input type="button" name="" id="ding" value="" />
+						<div class="stageDing"></div>
+					</div>
+				</dd>
+			</div>
+			
+			<dl id="footer_four" class="fr">
+				<dt>我们的APP</dt>
+				<dd>
+					<a href=""></a>
+				</dd>
+			</dl>
+		</footer>
+		<div id="footer_link">
+			<ul>
+				<li><a href="">关于走秀</a><span>|</span></li>
+				<li><a href="">About us</a><span>|</span></li>
+				<li><a href="">媒体报道</a><span>|</span></li>
+				<li><a href="">品牌招商</a><span>|</span></li>
+				<li><a href="">加入走秀</a><span>|</span></li>
+				<li><a href="">网站地图</a><span>|</span></li>
+				<li><a href="">联系我们</a><span>|</span></li>
+				<li><a href="">品牌大全</a><span>|</span></li>
+				<li><a href="">邮件订阅</a><span>|</span></li>
+				<li><a href="">WAP站点</a></li>
+			</ul>
+		</div>
+		<p id="footer_copy">
+			Copyright © 2008-2018
+			<a href="">Xiu.com</a>
+			深圳走秀网络科技有限公司 版权所有 . 
+			<a href="">粤ICP备07502993号</a>
+			<a href="">
+				<img src="../img/wab.png" alt="" />
+                                       粤公网安备 44030402000804号
+			</a>
+		</p>
+		<script src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+		<script src="../js/index.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/xiangqing.js" type="text/javascript" charset="utf-8"></script>
 	</body>
 </html>

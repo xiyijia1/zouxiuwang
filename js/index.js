@@ -1,8 +1,17 @@
-
+//window.onload = function(){
+//	$.getJSON("http://datainfo.duapp.com/shopdata/getCar.php?callback=?",{userID:$.cookie("username")},function(data){
+//		
+//	})	
+//}
 
 
 $(function(){
 	//header
+	
+	//用户名
+	if($.cookie("username")!=undefined){
+		$("#loginBtn a").text($.cookie("username"))
+	}
 	//我的购物车
 	$("#shoppingBtn").mouseenter(function(){
 		$(this).children("a").attr({class:"hover"})
@@ -12,6 +21,10 @@ $(function(){
 		$(this).children("a").attr({class:""})
 		$(this).children("#my_bag").hide()
 	})
+	
+	
+	
+	
 	
 	//我的走秀
 
@@ -50,46 +63,6 @@ $(function(){
 		$(this).children("a").attr({class:""})
 		$(this).children(".erji").hide()
 	})
-	
-//	var erji_left = document.getElementsByClassName("erji_left")
-//	$.ajax({
-//		type:"get",
-//		url:"jsonData/erjicandan.json",
-//		async:true,
-//		success:function(data){
-//			for(let i=0;i<data.length;i++){
-//				var strEr = "";
-//				for(let j=0;j<data[i].length;j++){
-//					strEr+=`<dl>
-//										<dt>
-//											${data[i][j].title}
-//										</dt>
-//										<dd>`
-//					for(let k = 0 ;k<data[i][j].con.length;k++){
-//						strEr+=`<a href="html/list.html">${data[i][j].con[k]}</a> <span>|</span>`
-//					}
-//					strEr+="</dd></dl>"									
-//				}
-//				erji_left[i].innerHTML = strEr
-//			}
-//		}
-//	});
-//	var erji_right = document.getElementsByClassName("erji_right");
-//	$.ajax({
-//		type:"get",
-//		url:"jsonData/erjiremai.json",
-//		async:true,
-//		success:function(data){
-//			for(let i=0;i<data.length;i++){
-//				var strErRe = "<dl><dt>热门品牌</dt><dd>";
-//				for(let j=0;j<data[i].length;j++){
-//					strErRe+=`<a href="">${data[i][j]}</a>`									
-//				}
-//			strErRe+="</dd></dl>"
-//			erji_right[i].innerHTML = strErRe
-//			}
-//		}
-//	});
 	
 	var timer = null;
 	//footer

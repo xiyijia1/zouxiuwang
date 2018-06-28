@@ -64,7 +64,7 @@ $(function(){
 						$("#tishiL").show();
 						$("#tishiL #shoujihaoyanzhengL").text("用户名密码不符");
 					}else{
-						setCookie("username",phoneStr,7);
+						$.cookie("username",phoneStr,{expires:7,path:"/"});
 						location.href="../index.html";
 						
 					}

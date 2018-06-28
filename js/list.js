@@ -1,4 +1,15 @@
 
+window.onload = function(){
+	$.getJSON("http://datainfo.duapp.com/shopdata/getCar.php?callback=?",{userID:$.cookie("username")},function(data){
+		var zongshu = 0;
+		for(let k = 0;k<data.length;k++){
+			zongshu+=parseInt(data[k].number)
+		}
+		$("#num").text(zongshu)
+	})	
+}
+
+
 $(function(){
 	//获得二级菜单
 	var erji_left = document.getElementsByClassName("erji_left")
@@ -84,6 +95,8 @@ $(function(){
 		$("html,body").animate({"scrollTop":0},1000)
 		return false
 	})
+	
+	//取得数据将列表页展示出来
 	var listUl = document.getElementsByClassName("listUl")[0];
 	$.ajax({
 		type:"get",
@@ -91,12 +104,14 @@ $(function(){
 		async:true,
 		dataType:"jsonp",
 		success:function(data){
+			$("#numt").text(data.length)
 	        var str = "";
+	        //detail.html?id=${item.goodsID}
 	        for(let i = 0;i<data.length;i++){
-	        	str+=`<li class="everyOne">
+	        	str+=`<li class="everyOne" dataId="${data[i].goodsID}">
 							<ol>
 								<li class="prc">
-									<a href="../html/xiangqing.html" class="prcA">
+									<a href="../html/xiangqing.html?id=${data[i].goodsID}" class="prcA">
 										<img src="${data[i].goodsListImg}"/>
 										<div class="count">
 											<p>
@@ -119,7 +134,7 @@ $(function(){
 								</li>
 								<li class="tit">
 									<span>${data[i].className}</span>
-									<a href="../html/xiangqing.html">${data[i].goodsName}</a>
+									<a href="../html/xiangqing.html?id=${data[i].goodsID}">${data[i].goodsName}</a>
 								</li>
 								<li class="price">
 									<span class="showPrice">${data[i].price}</span>
@@ -143,6 +158,10 @@ $(function(){
 					$(this).css("margin-right",0)
 				}
 			})
+//			$(".everyOne").click(function(){
+//				let goodsId = $(this).attr("dataId")
+//				setCookie("shangpin",goodsId,7)
+//			})
 		}
 	});
 })

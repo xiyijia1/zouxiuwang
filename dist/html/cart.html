@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>购物车</title>
+		<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/other.css"/>
+		<script src="../js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div id="cart_header">
+			<h1 id="cart_logo">
+				<a href="../index.html" class="rela" title="走秀网  全球时尚  正品保证">
+					<b class="abso"></b>
+				</a>
+			</h1>
+			<div class="cart_column abso">
+				<p class="s_mar">
+					<a href="" title="在线客服" id="kefuzaixian">在线客服</a>
+					<span>
+						客服热线(免长途费)
+						<b>400-888-4499</b>
+					</span>
+				</p>
+				<p>
+					<span id="loginZone">
+						您好!欢迎光临走秀网!
+						<a href="zhuce.html" id="loginBtn" title="登录/注册">
+							[  登录/注册  ]
+						</a>
+					</span>
+					|
+					<a href="" title="帮助">帮助中心</a>
+				</p>
+			</div>
+		</div>
+	
+	
+	
+		<div class="my_shoppingCart">
+			<div class="shop_list">
+				<div class="st_ul">
+					<li class="sli_bg">
+						<span class="sli_on"></span>
+						1.我的购物袋
+					</li>
+					<li>
+						<span class="sli_of"></span>
+						2.填写并核对订单信息
+					</li>
+					<li>
+						<span class="sli_bg"></span>
+						3.成功提交订单
+					</li>
+				</div>
+			</div>
+		</div>
+	
+		<div id="gouwuche">
+			<div id="shoppingCart">
+				<!--没有商品时显示的开始-->
+				<div class="meiyoushangpin">
+					<img src="../img/nogoods.jpg" alt="" />
+					<h2 class="war_h2">
+						购物袋暂时没有商品,现在就去
+						<a href="" class="blue">
+							<span>挑选自己喜欢的商品</span>
+						</a>
+					</h2>
+				</div>
+				<!--没有商品时显示的结束-->
+				<!--有商品时显示开始-->
+				<div class="wratab_div">
+					<div id="neirongUp">
+						<div id="neirongUp_tit">
+							<div id="all">
+								<input type="checkbox" name="quanxuan" id="quanxuan" value="" checked="checked" class="select_all" />
+								<label name="quanxuan" for="quanxuan">全选</label>
+							</div>
+							<div class="shangpin">商品</div>
+							<div class="goumaijia">购买价(元)</div>
+							<div class="shuliang">数量</div>
+							<div class="caozuo">操作</div>
+						</div>
+						<div id="neirongUp_con">
+							<!--<div class="meitiao">
+								<div class="firstS" style="width: 100px;text-align: center;position: relative;">
+									<input type="checkbox" class="single" name="shangpin" value="" />
+								</div>
+								<div class="secondS" style="width: 465px;">
+									<dl>
+										<dt>
+											<img src="../img/shoping.jpg" alt="" />
+										</dt>
+										
+										<dd>
+											<p>衬衣</p>
+											<p><a href="">春天的衬衣</a></p>
+											<p style="color: #5b5b5b;"> 颜色 : 无   尺码 : 均码</p>
+										</dd>
+										
+									</dl>
+								</div>
+								<div class="thirdS" style="width: 90px;">
+									<p class="yuan">￥3433</p>
+									<p class="xian">￥2455</p>
+								</div>
+								<div class="fourS" style="width: 136px;">
+									<input type="button" class="jianS" value="-" />
+									<input type="text" value="1" class="spinnerExample">
+									<input type="button" class="addS" value="+" />
+								</div>
+								<div class="fiveS" style="width: 138px;">
+									<p class="yi">移至收藏夹</p>
+									<p class="shan">删除</p>
+								</div>
+								
+							</div>-->
+							
+						</div>
+					</div>
+				
+					<div id="neirongDown">
+						<div id="allDowm">
+							<input type="checkbox" name="quanxuanDown" id="quanxuanDown" value="" checked="checked" class="select_all" />
+							<label name="quanxuanDown" for="quanxuanDown">全选</label>
+						</div>
+						<div id="middle">
+							<span id="delete">删除</span>
+							<span id="qingchu">清除失效产品</span>
+							<span id="shoucangjia">移至收藏夹</span>
+						</div>
+						<div id="heji">
+							<p id="heji_up">
+								<span class="zuo">已选商品<b id="zongshu"></b>件</span>
+								<span class="you">总计<em>(不含运费) : </em><b id="zongjia">￥7878</b></span>
+							</p>
+							<p id="heji_down">
+								<span>已优惠   : <b id="yiyouhui">￥7878</b></span>
+								<span>商品总金额   :   <b id="buyouhuizongjia">￥7878</b></span>
+							</p>
+						</div>
+						<div id="jiesuan">
+							结算
+						</div>
+					</div>
+				</div>
+				<!--有商品时显示结束-->
+			</div>
+			<div class="elements_list">
+				
+			</div>
+			<div id="interestItems">
+				
+			</div>
+		</div>
+		<script src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+		<script src="../js/cart.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>
